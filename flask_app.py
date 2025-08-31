@@ -15,7 +15,7 @@ client = MongoClient(MONGO_URI)
 db = client["mydatabase"]          # database
 collection = db["users"]           # collection
 
-# Show form
+# Show form to insert email and name
 @app.route("/", methods=["GET"])
 def form():
     return render_template("form.html")
